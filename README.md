@@ -8,13 +8,6 @@ Note that any changes made outside of your home directory from within the Docker
 
 For more info on Docker see here: https://docs.docker.com/engine/installation/linux/ubuntulinux/
 
-### Quick start - Get the pre-built image
-
-Simply do :
-```
-TODO REMOVE sudo docker pull xia0ben/rosdocked-kinetic-pepper:latest
-```
-
 ### Build
 
 This will create the image with your user/group ID and home directory.

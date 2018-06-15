@@ -14,7 +14,8 @@ popd > /dev/null
 set -e
 
 # Run the container with shared X11
-sudo docker run\
+# sudo docker...
+docker run\
   --net=host\
   -e SHELL\
   -e DISPLAY\
@@ -23,4 +24,3 @@ sudo docker run\
   -v "/tmp/.X11-unix:/tmp/.X11-unix:rw"\
   --name $1\
   -it $1 $SHELL
-
