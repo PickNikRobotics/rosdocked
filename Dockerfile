@@ -1,4 +1,3 @@
-#FROM osrf/ros:kinetic-desktop-xenial
 FROM ros:kinetic
 
 # Arguments
@@ -14,22 +13,21 @@ RUN apt-get install -y \
       # Basic Utilities
       zsh screen tree sudo ssh synaptic nano inetutils-ping git \
       # Latest X11 / mesa GL
-      xserver-xorg-dev-lts-wily \
-      libegl1-mesa-dev-lts-wily \
-      libgl1-mesa-dev-lts-wily \
-      libgbm-dev-lts-wily \
-      mesa-common-dev-lts-wily \
-      libgles2-mesa-lts-wily \
-      libwayland-egl1-mesa-lts-wily \
-      libopenvg1-mesa-lts-utopic \
+      xserver-xorg-dev-lts-xenial\
+      libegl1-mesa-dev-lts-xenial\
+      libgl1-mesa-dev-lts-xenial\
+      libgbm-dev-lts-xenial\
+      mesa-common-dev-lts-xenial\
+      libgles2-mesa-lts-xenial\
+      libwayland-egl1-mesa-lts-xenial\
       # Dependencies required to build rviz
       qt4-dev-tools \
       libqt5core5a libqt5dbus5 libqt5gui5 libwayland-client0 \
       libwayland-server0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
-      libxcb-render-util0 libxcb-util0-dev libxcb-xkb1 libxkbcommon-x11-0 \
+      libxcb-render-util0 libxcb-util1 libxcb-xkb1 libxkbcommon-x11-0 \
       libxkbcommon0 \
       # The rest of ROS-desktop
-      #ros-kinetic-desktop-full=1.3.2-0*
+      ros-kinetic-desktop-full \
       # Additional development tools
       x11-apps \
       python-pip \

@@ -22,7 +22,7 @@ This will create the image with your user/group ID and home directory.
 Run the docker image.
 
 ```
-./dock.sh <IMAGE_NAME>
+./run.sh <IMAGE_NAME>
 ```
 
 The image shares it's network interface with the host, so you can run this in multiple terminals for multiple hooks into the docker environment.
